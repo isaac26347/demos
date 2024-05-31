@@ -1,0 +1,108 @@
+<div class="js-sort-wpr">
+    <details class="js-sort-menu">
+        <summary class="js-sort-menu-title">Sort by</summary>
+        <ul>
+            <li>
+                <a href="#" class="js-sort-menu-option" data-value="brand" data-sort-dir="up">Brand - Highest to Lowest</a>
+            </li>
+            <li>
+                <a href="#" class="js-sort-menu-option" data-value="brand" data-sort-dir="down">Brand - Lowest to Highest</a>
+            </li>
+            <li>
+                <a href="#" class="js-sort-menu-option" data-value="rating" data-sort-dir="up">Rating - Highest to Lowest</a>
+            </li>
+            <li>
+                <a href="#" class="js-sort-menu-option" data-value="rating" data-sort-dir="down">Rating - Lowest to Highest</a>
+            </li>
+            <li>
+                <a href="#" class="js-sort-menu-option" data-value="amount" data-sort-dir="up">Amount - Highest to Lowest</a>
+            </li>
+            <li>
+                <a href="#" class="js-sort-menu-option" data-value="amount" data-sort-dir="down">Amount - Lowest to Highest</a>
+            </li>
+        </ul>
+    </details>
+
+    <table class="js-sortable">
+        <thead>
+            <tr>
+                <th class="js-sort-column" data-sort-bind="brand">Brand</th>
+                <th class="js-sort-column test" data-sort-bind="rating">Rating</th>
+                <th class="js-sort-column" data-sort-bind="amount" data-sort-dir="up">Amount</th>
+            </tr>
+        </thead>
+
+        <tbody class="sortTbody">
+            <tr>
+                <td data-sort="Endurance">Endurance</td>
+                <td>1.6</td>
+                <td>200</td>
+            </tr>
+
+            <tr>
+                <td data-sort="Olive">Olive</td>
+                <td>4.3</td>
+                <td>400</td>
+            </tr>
+
+            <tr>
+                <td data-sort="Carshield">Carshield</td>
+                <td>3.9</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td data-sort="Toco">Toco</td>
+                <td>2.5</td>
+                <td>3000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="js-sort-menu-feedback-cntr">Sorted by <strong class="js-sort-menu-feedback"></strong></p>
+</div>
+
+
+<div class="js-sort-demo-2 js-sort-wpr">
+    <table class="js-sortable">
+        <thead>
+            <tr>
+                <th class="js-sort-column" data-sort-bind="brand">Brand</th>
+                <th class="js-sort-column test" data-sort-bind="rating">Rating</th>
+                <th class="js-sort-column" data-sort-bind="amount" data-sort-dir="up">Amount</th>
+            </tr>
+        </thead>
+
+        <tbody class="sortTbody">
+            <tr>
+                <td data-sort="Endurance" data-sort-column-name="brand">Endurance</td>
+                <td>info</td>
+                <td data-sort-column-name="rating">1.6</td>
+                <td data-sort-column-name="amount">200</td>
+            </tr>
+
+            <tr>
+                <td data-sort-column-name="brand" data-sort="Olive">Olive</td>
+                <td>info</td>
+                <td data-sort-column-name="rating">4.3</td>
+                <td data-sort-column-name="amount">400</td>
+            </tr>
+
+            <tr>
+                <td data-sort-column-name="brand" data-sort="Carshield">Carshield</td>
+                <td>info</td>
+                <td data-sort-column-name="rating">3.9</td>
+                <td data-sort-column-name="amount">50</td>
+            </tr>
+
+            <tr>
+                <td data-sort-column-name="brand" data-sort="Toco">Toco</td>
+                <td>info</td>
+                <td data-sort-column-name="rating">2.5</td>
+                <td data-sort-column-name="amount">3000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="js-sort-menu-feedback-cntr">Sorted by <strong class="js-sort-menu-feedback"></strong></p>
+</div>
